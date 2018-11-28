@@ -27,8 +27,8 @@ public class BruteRasterImage implements Image{
     }
     public BruteRasterImage(Color[][] colors){
         checkMatrix(colors);
-        this.width = Matrices.getColumnCount(colors);
-        this.height = Matrices.getRowCount(colors);
+        this.width = Matrices.getRowCount(colors);
+        this.height = Matrices.getColumnCount(colors);
         this.matrice = colors;
     }
 
